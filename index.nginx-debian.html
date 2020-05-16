@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+<title>Tervetuloa Nginx webpalvelimeen.</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Tervetuloa Nginx webpalvelimeen!</h1>
+<p>Sinulla on käytössäsi {{ grains['os_family'] }} pohjainen tietokone.<br></p>
+<p>Käyttöjärjestelmäsi on {{ grains['osfinger'] }} </p>
+<p>Koneessasi on {{ grains['cpu_model'] }} prosessori.<br>
+
+<p>Konfigurointi tiedostot löytyvät
+<a href="https://www.github.com/inframake">GitHubista</a>.<br/>
+
+<p><em>Kiitos</em></p>
+</body>
+</html>
